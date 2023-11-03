@@ -10,7 +10,7 @@
 <body>
     <div class="container"><br>
         <div class="col-md-4 col-md-offset-4">
-            <h2 class="text-center"><b>KOS CANTIK KEDIRI</b><br>Aplikasi Nilai Santri</h3>
+            <h2 class="text-center"><br><b>Kos Cantik Kota Kediri<b></h3>
             <hr>
             @if(session('error'))
             <div class="alert alert-danger">
@@ -18,7 +18,7 @@
             </div>
             @endif
             <form action="{{ route('actionlogin') }}" method="post">
-            @csrf
+                @csrf
                 <div class="form-group">
                     <label>Email</label>
                     <input type="email" name="email" class="form-control" placeholder="Email" required="">
@@ -27,10 +27,10 @@
                     <label>Password</label>
                     <input type="password" name="password" class="form-control" placeholder="Password" required="">
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Log In</button>
-                <hr>
-                <p class="text-center">Belum punya akun? <a href="#">Register</a> sekarang!</p>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
             </form>
+            <hr>
+            <p class="text-center">Belum punya akun? <a href="#">Daftar!</a></p>
         </div>
     </div>
 </body>
