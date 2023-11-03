@@ -8,3 +8,5 @@ Route::get('/coba', [CobaController::class, 'index']);
 Route::get('/login', [LoginController::class, 'login']);
 Route::post('/login', [LoginController::class, 'actionlogin'])->name('actionlogin');
 Route::get('/logout', [LoginController::class, 'actionlogout'])->name('actionlogout');
+
+
